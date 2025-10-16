@@ -1,59 +1,62 @@
-@font-face {
+/* @font-face {
   font-family: hotelFont;
   src: url(source/hotel_de_paris.ttf);
-}
+} */
 
 html {
-  font-family: sans-serif;
+  font-family: serif;
 }
 
 legend {
-  font-family: ssans-serif;
+  /* border: 1px dashed black; */
+  padding: 0px 10px;
+
+  font-family: serif;
   font-size: larger;
   font-weight: bold;
+
   color: #565656;
 }
 
+.centering {
+  /* border: 1px solid black; */
+  text-align: center;
+}
+
 .theme {
-  /* background-color: gold; */
+  /* background-color: #e7d19c; */
+  background-color: #565656;
 }
 
 .container {
   display: flex;
+  background-color: rgb(255, 253, 245);
+  padding-top: 10px;
+  padding-bottom: 30px;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
 }
 
 .left-page {
   /* border: 1px solid black; */
-  width: 40rem;
+  /* width: 40rem; */
   display: flex;
   flex-direction: column;
   flex: 1;
-  /* align-items: center; */
-  /* flex: 1;
-  background-color: #ee4d2d;
-  color: white;
-  display: flex;
-  justify-content: center;
   align-items: center;
-  flex-direction: column; */
+  margin: 0px 80px;
 }
 
 .right-page {
-  /* display: flex;
-  flex: 1; */
   flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #fff;
 }
 
 .top {
   /* border: 1px solid black; */
-  /* font-family: hotelFont; */
   font-family: serif;
-  text-align: center;
-  /* color: #0d3b66; */
   color: #c49a6c;
 }
 
@@ -61,10 +64,26 @@ img#form {
   width: 35vw;
 }
 
+fieldset {
+  border-radius: 5px;
+  background-color: rgb(244, 234, 222);
+  transition: box-shadow 0.2s, scale 0.2s;
+}
+
+fieldset:hover {
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  scale: 1.02;
+}
+
+input {
+  border: 1px solid rgb(196, 154, 108);
+  border-radius: 3px;
+}
+
 input[type="submit"] {
   padding: 15px;
 
-  color: #d4ab7f;
+  color: #e7d19c;
   background-color: #565656;
 
   border-radius: 30px;
@@ -78,7 +97,7 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
   color: #565656;
-  background-color: #d4ab7f;
+  background-color: #d5c192;
 
   border-radius: 30px;
   border: 2px solid #c49a6c;
@@ -87,11 +106,23 @@ input[type="submit"]:hover {
   scale: 1.05;
 }
 
-input {
-  border: 1px solid rgb(196, 154, 108);
+input[type="text"],
+input[type="date"] {
+  width: 250px;
+  height: 25px;
+  color: #c49a6c;
+  /* box-shadow: 3px 3px 3px rgba(232, 214, 175, 0.814); */
 }
 
-.centering {
-  /* border: 1px solid black; */
-  text-align: center;
+td {
+  padding: 5px;
+  color: #606060;
+}
+
+select {
+  background-color: #e7d19c;
+  color: #565656;
+  padding: 3px;
+  border-radius: 5px;
+  border: 1px solid #555;
 }

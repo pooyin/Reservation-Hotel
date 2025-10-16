@@ -9,79 +9,121 @@
   <body class="theme">
     <div class="container">
       <div class="left-page">
-        <h1 class="top">Reservation Hotel Room</h1>
+        <h1 class="top">- Reservation Hotel Room -</h1>
         <form action="" method="post">
           <fieldset>
             <legend>Personal Date</legend>
 
-            <label for="name">Name</label><br />
-            <input type="text" name="name" id="name" /><br />
+            <table>
+              <tr>
+                <td><label for="name">Name</label></td>
+                <td><input type="text" name="name" id="name" /></td>
+              </tr>
 
-            <label>Gender</label><br />
-            <input type="radio" id="l" name="jk" value="pria" />
-            <label for="l">Laki-laki</label>
+              <tr>
+                <td><label>Gender</label></td>
+                <td>
+                  <input type="radio" id="l" name="jk" value="pria" />
+                  <label for="l">Laki-laki</label>
 
-            <input type="radio" id="p" name="jk" value="wanita" />
-            <label for="p">Perempuan</label>
+                  <input type="radio" id="p" name="jk" value="wanita" />
+                  <label for="p">Perempuan</label>
+                </td>
+              </tr>
 
-            <label for="email">Email Address</label><br />
-            <input type="text" name="email" id="email" />
+              <tr>
+                <td><label for="email">Email Address</label></td>
+                <td><input type="text" name="email" id="email" /></td>
+              </tr>
 
-            <label for="telp">Telp Number</label><br />
-            <input type="text" name="telp" id="telp" />
+              <tr>
+                <td><label for="telp">Telp Number</label></td>
+                <td><input type="text" name="telp" id="telp" /></td>
+              </tr>
+            </table>
           </fieldset>
 
+          <br />
           <fieldset>
-            <legend>Reservation Room form</legend>
+            <legend>Reservation Room Form</legend>
 
-            <label for="rName">Reservation Name</label><br />
-            <input type="text" name="rName" id="rName" />
+            <table>
+              <tr>
+                <td><label for="rName">Reservation Name</label></td>
+                <td><input type="text" name="rName" id="rName" /></td>
+              </tr>
 
-            <label for="bookDate">Booking date</label><br />
-            <input type="text" name="bookDate" id="bookDate" />
+              <tr>
+                <td><label for="bookDate">Booking date</label></td>
+                <td><input type="date" name="bookDate" id="bookDate" /></td>
+              </tr>
 
-            <label for="room">Room type</label><br />
-            <select name="room" id="room">
-              <option value="Deluxe">Deluxe</option>
-              <option value="Basic">Basic</option>
-            </select>
+              <tr>
+                <td><label for="room">Room type</label></td>
+                <td>
+                  <select name="room" id="room">
+                    <option value="Deluxe">Deluxe</option>
+                    <option value="Basic">Basic</option>
+                  </select>
+                </td>
+              </tr>
 
-            <label for="bed">Bed type</label><br />
-            <select name="bed" id="bed">
-              <option value="Single">Single bed</option>
-              <option value="Double">Double bed</option>
-            </select>
+              <tr>
+                <td><label for="bed">Bed type</label></td>
+                <td>
+                  <select name="bed" id="bed">
+                    <option value="Single">Single bed</option>
+                    <option value="Double">Double bed</option>
+                  </select>
+                </td>
+              </tr>
 
-            <label>Breakfast</label><br />
-            <input
-              type="radio"
-              name="breakfast"
-              id="breakfast"
-              value="include"
-            /><label for="breakfast">With Breakfast</label> &nbsp;
-            <input
-              type="radio"
-              name="breakfast"
-              id="nonBreakfast"
-              value="exclude"
-            /><label for="nonBreakfast">Without Breakfast</label>
+              <tr>
+                <td><label>Breakfast</label></td>
+                <td>
+                  <input
+                    type="radio"
+                    name="breakfast"
+                    id="breakfast"
+                    value="include"
+                  /><label for="breakfast">With Breakfast</label>
+                  <input
+                    type="radio"
+                    name="breakfast"
+                    id="nonBreakfast"
+                    value="exclude"
+                  /><label for="nonBreakfast">Without Breakfast</label>
+                </td>
+              </tr>
+            </table>
           </fieldset>
 
+          <br />
           <fieldset>
             <legend>Payment</legend>
 
-            <label for="inDate">Check in date</label><br />
-            <input type="text" name="inDate" id="inDate" />
+            <table>
+              <tr>
+                <td><label for="inDate">Check in date</label></td>
+                <td><input type="date" name="inDate" id="inDate" /></td>
+              </tr>
 
-            <label for="outDate">Check out date</label><br />
-            <input type="text" name="outDate" id="outDate" />
+              <tr>
+                <td><label for="outDate">Check out date</label></td>
+                <td><input type="date" name="outDate" id="outDate" /></td>
+              </tr>
 
-            <label for="payment">Payment Method</label><br />
-            <select name="payment" id="payment">
-              <option value="cash">cash</option>
-              <option value="credit">credit</option>
-              <option value="debit">debit</option>
-            </select>
+              <tr>
+                <td><label for="payment">Payment Method</label></td>
+                <td>
+                  <select name="payment" id="payment">
+                    <option value="cash">Cash</option>
+                    <option value="credit">Credit</option>
+                    <option value="debit">Debit</option>
+                  </select>
+                </td>
+              </tr>
+            </table>
           </fieldset>
           <br />
           <div class="centering">
@@ -91,7 +133,7 @@
       </div>
 
       <div class="right-page">
-        <img id="form" src="source/Logo1.jpg" alt="Hotel" />
+        <img id="form" src="source/Logo1-removebg-preview.png" alt="Hotel" />
       </div>
     </div>
   </body>
