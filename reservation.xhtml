@@ -5,11 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Reservation Hotel Room</title>
     <link rel="stylesheet" href="style.css" />
-    <style>
-      li {
-        list-style-position: inside;
-      }
-    </style>
   </head>
   <body class="theme">
     <div class="container">
@@ -19,109 +14,74 @@
           <fieldset>
             <legend>Personal Date</legend>
 
-            <ol>
-              <li>
-                <label for="name">Name</label><br />
-                <input type="text" name="name" id="name" /><br />
-              </li>
-              <br />
+            <label for="name">Name</label><br />
+            <input type="text" name="name" id="name" /><br />
 
-              <li>
-                <label for="gender">Gender</label><br />
-                <input type="text" name="gender" id="gender" />
-              </li>
-              <br />
+            <label>Gender</label><br />
+            <input type="radio" id="l" name="jk" value="pria" />
+            <label for="l">Laki-laki</label>
 
-              <li>
-                <label for="email">Email Address</label><br />
-                <input type="text" name="email" id="email" />
-              </li>
-              <br />
+            <input type="radio" id="p" name="jk" value="wanita" />
+            <label for="p">Perempuan</label>
 
-              <li>
-                <label for="telp">Telp Number</label><br />
-                <input type="text" name="telp" id="telp" />
-              </li>
-            </ol>
+            <label for="email">Email Address</label><br />
+            <input type="text" name="email" id="email" />
+
+            <label for="telp">Telp Number</label><br />
+            <input type="text" name="telp" id="telp" />
           </fieldset>
 
           <fieldset>
             <legend>Reservation Room form</legend>
-            <ol>
-              <li>
-                <label for="rName">Reservation Name</label><br />
-                <input type="text" name="rName" id="rName" />
-              </li>
-              <br />
 
-              <li>
-                <label for="bookDate">Booking date</label><br />
-                <input type="text" name="bookDate" id="bookDate" />
-              </li>
-              <br />
+            <label for="rName">Reservation Name</label><br />
+            <input type="text" name="rName" id="rName" />
 
-              <li>
-                <label for="room">Room type</label><br />
-                <select name="room" id="room">
-                  <option value="Deluxe">Deluxe</option>
-                  <option value="Basic">Basic</option>
-                </select>
-              </li>
-              <br />
+            <label for="bookDate">Booking date</label><br />
+            <input type="text" name="bookDate" id="bookDate" />
 
-              <li>
-                <label for="bed">Bed type</label><br />
-                <select name="bed" id="bed">
-                  <option value="Single">Single bed</option>
-                  <option value="Double">Double bed</option>
-                </select>
-              </li>
-              <br />
+            <label for="room">Room type</label><br />
+            <select name="room" id="room">
+              <option value="Deluxe">Deluxe</option>
+              <option value="Basic">Basic</option>
+            </select>
 
-              <li>
-                <label>Breakfast</label><br />
-                <input
-                  type="radio"
-                  name="breakfast"
-                  id="breakfast"
-                  value="include"
-                /><label for="breakfast">With Breakfast</label> &nbsp;
-                <input
-                  type="radio"
-                  name="nonBreakfast"
-                  id="nonBreakfast"
-                  value="exclude"
-                /><label for="nonBreakfast">Without Breakfast</label>
-              </li>
+            <label for="bed">Bed type</label><br />
+            <select name="bed" id="bed">
+              <option value="Single">Single bed</option>
+              <option value="Double">Double bed</option>
+            </select>
 
-              <br />
-            </ol>
+            <label>Breakfast</label><br />
+            <input
+              type="radio"
+              name="breakfast"
+              id="breakfast"
+              value="include"
+            /><label for="breakfast">With Breakfast</label> &nbsp;
+            <input
+              type="radio"
+              name="breakfast"
+              id="nonBreakfast"
+              value="exclude"
+            /><label for="nonBreakfast">Without Breakfast</label>
           </fieldset>
 
           <fieldset>
             <legend>Payment</legend>
-            <ol>
-              <li>
-                <label for="inDate">Check in date</label><br />
-                <input type="text" name="inDate" id="inDate" />
-              </li>
-              <br />
 
-              <li>
-                <label for="outDate">Check out date</label><br />
-                <input type="text" name="outDate" id="outDate" />
-              </li>
-              <br />
+            <label for="inDate">Check in date</label><br />
+            <input type="text" name="inDate" id="inDate" />
 
-              <li>
-                <label for="payment">Payment Method</label><br />
-                <select name="payment" id="payment">
-                  <option value="cash">cash</option>
-                  <option value="credit">credit</option>
-                  <option value="debit">debit</option>
-                </select>
-              </li>
-            </ol>
+            <label for="outDate">Check out date</label><br />
+            <input type="text" name="outDate" id="outDate" />
+
+            <label for="payment">Payment Method</label><br />
+            <select name="payment" id="payment">
+              <option value="cash">cash</option>
+              <option value="credit">credit</option>
+              <option value="debit">debit</option>
+            </select>
           </fieldset>
           <br />
           <div class="centering">
@@ -131,7 +91,7 @@
       </div>
 
       <div class="right-page">
-        <img id="form" src="source/gambar-hotel.jpg" alt="Hotel" />
+        <img id="form" src="source/Logo1.jpg" alt="Hotel" />
       </div>
     </div>
   </body>
